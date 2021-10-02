@@ -1,6 +1,8 @@
-module JFIF.Segment;
+#include "Segment.hpp"
 
-import std.core;
+#include <exception>
+#include <iostream>
+#include <memory>
 
 using std::istream, std::runtime_error, std::unique_ptr;
 

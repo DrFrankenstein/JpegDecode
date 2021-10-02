@@ -148,11 +148,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="JFIF\JFIF.ixx" />
+    <ClCompile Include="JFIF\JFIF.hpp" />
     <ClCompile Include="JFIF\JfifFile.cpp" />
-    <ClCompile Include="JFIF\JfifFile.ixx" />
+    <ClCompile Include="JFIF\JfifFile.hpp" />
     <ClCompile Include="JFIF\Segment.cpp" />
-    <ClCompile Include="JFIF\Segment.ixx" />
+    <ClCompile Include="JFIF\Segment.hpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>

@@ -1,6 +1,4 @@
-module JFIF.JfifFile;
-
-import std.core;
+#include "JfifFile.hpp"
 
 using std::istream;
 

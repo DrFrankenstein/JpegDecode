@@ -21,13 +21,13 @@
     <ClCompile Include="JFIF\JfifFile.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="JFIF\JfifFile.ixx">
+    <ClCompile Include="JFIF\JfifFile.hpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="JFIF\Segment.ixx">
+    <ClCompile Include="JFIF\Segment.hpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="JFIF\JFIF.ixx">
+    <ClCompile Include="JFIF\JFIF.hpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="JFIF\Segment.cpp">

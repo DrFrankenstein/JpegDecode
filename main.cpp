@@ -1,6 +1,8 @@
-import std.core;  // breaks Intellisense :( <https://developercommunity2.visualstudio.com/t/Intellisense-lacks-support-for-C-Stand/1317270>
+#include <cstdlib>
+#include <fstream>
+#include <iostream>
 
-import JFIF;
+#include "JFIF/JfifFile.hpp"
 
 using JFIF::JfifFile;
 

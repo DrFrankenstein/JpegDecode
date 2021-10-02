@@ -1,13 +1,12 @@
-export module JFIF.Segment;
+#pragma once
 
-import std.core;
+#include <iostream>
+#include <memory>
 
-using std::istream, std::unique_ptr;
-using Position = istream::pos_type;
-
-
-export namespace JFIF
+namespace JFIF
 {
+
+using Position = std::istream::pos_type;
 
 enum class SegmentType : unsigned char
 {
@@ -93,6 +92,6 @@ struct App0Segment : public PayloadSegment
 	
 };
 
-auto readSegment(istream& stream) -> unique_ptr<Segment>;
+auto readSegment(std::istream& stream) -> std::unique_ptr<Segment>;
 
 }
