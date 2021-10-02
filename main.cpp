@@ -1,9 +1,8 @@
-// import std.core;  // waiting on <https://developercommunity2.visualstudio.com/t/Intellisense-lacks-support-for-C-Stand/1317270>
-import <cstdlib>;
-import <iostream>;
-import <fstream>;
+import std.core;  // breaks Intellisense :( <https://developercommunity2.visualstudio.com/t/Intellisense-lacks-support-for-C-Stand/1317270>
 
-import JfifFile;
+import JFIF;
+
+using JFIF::JfifFile;
 
 int main(int argc, char* argv[])
 {
@@ -11,4 +10,5 @@ int main(int argc, char* argv[])
 		std::exit(1);
 
 	std::ifstream stream { argv[1] };
+	JfifFile file { stream };
 }

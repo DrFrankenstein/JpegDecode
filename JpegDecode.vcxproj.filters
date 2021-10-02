@@ -24,6 +24,15 @@
     <ClCompile Include="JFIF\JfifFile.ixx">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
+    <ClCompile Include="JFIF\Segment.ixx">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="JFIF\JFIF.ixx">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="JFIF\Segment.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include=".clang-format" />

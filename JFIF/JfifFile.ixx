@@ -1,6 +1,6 @@
-export module JfifFile;
+export module JFIF.JfifFile;
 
-import<iostream>;
+import std.core;
 
 using std::istream;
 
