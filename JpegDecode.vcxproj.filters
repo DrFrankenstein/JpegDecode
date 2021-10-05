@@ -38,4 +38,9 @@
     <None Include=".clang-format" />
     <None Include=".clang-tidy" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="StreamUtils\readers.hpp">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>
