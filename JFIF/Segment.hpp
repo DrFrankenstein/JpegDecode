@@ -1,5 +1,6 @@
 #pragma once
 
+#include <array>
 #include <cstdint>
 #include <iostream>
 #include <memory>
@@ -85,22 +86,32 @@ struct Segment
 
 struct PayloadSegment : public Segment
 {
-	std::uint16_t length;
-
-	PayloadSegment(std::istream& input);
 };
 
 struct App0Segment : public PayloadSegment
+{
+	std::array<char, 5> identifier;
+};
+
+struct JfifSegment : public App0Segment
 {
 	std::uint16_t version;
 	enum class Units : std::uint8_t	{ none = 0, dpi = 1, dpcm = 2 } units;
 	std::uint16_t xDensity, yDensity;
 	std::uint8_t thumbnailWidth, thumbnailHeight;
 	std::unique_ptr<std::uint8_t> thumbnail;
+};
 
-	App0Segment(std::istream& input);
+struct JfxxSegment : public App0Segment
+{
+	std::uint8_t extensionCode;
+	// TODO: implement rest
 };
 
 auto readSegment(std::istream& stream) -> std::unique_ptr<Segment>;
+//auto readApp0Segment(std::istream& stream) -> std::unique_ptr<App0Segment>;
+//auto readJfifSegment(std::istream& stream) -> std::unique_ptr<JfifSegment>;
+//auto readJfxxSegment(std::istream& stream) -> std::unique_ptr<JfxxSegment>;
+
 
 }
